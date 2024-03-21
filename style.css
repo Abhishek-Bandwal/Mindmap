@@ -1,0 +1,106 @@
+body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.line-right {
+    background-color: black;
+    height: 2px;
+    width: 6vw;
+    margin-left: 1rem;
+    float: left;
+}
+
+.line-bottom {
+    height: 10vw;
+    width: 3px;
+    background-color: black;
+    position: absolute;
+    left:5px;
+    top: 15px;
+    
+}
+
+.point-right {
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 30px solid black;
+    float: right;
+    margin-right: 1rem;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    float: right;
+    margin-right: 1rem;
+    position: relative;
+    left: 50%;
+    top: -14px;
+    border-left: 23px solid black;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+
+}
+
+.text {
+    position: relative;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.tooltip {
+    visibility: hidden;
+    background-color: wheat;
+    color: black;
+    position: absolute;
+    width: 50vw;
+    z-index: 1;
+    border-radius: .5rem;
+    padding: .5rem 1rem;
+    margin-left: .5rem;
+}
+
+h1{
+    border-bottom: 1px dotted;
+}
+
+.step {
+    cursor: pointer;
+    border: 1px;
+}
+
+.step:hover .tooltip {
+    visibility: visible;
+}
+
+p {
+    font-size: medium
+}
+.research{
+    padding: .5rem 1rem; 
+    background-color: rgb(0, 0, 132);
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 6rem;
+    justify-content: center;
+}
+.substep {
+    position: relative;
+    top: -19px;
+    left: 4px;
+    cursor: pointer;
+}
+
+.substep:hover .tooltip {
+    visibility: visible;
+}
